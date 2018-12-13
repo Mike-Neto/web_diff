@@ -1,0 +1,40 @@
+{
+  "name": "web_diff",
+  "version": "1.0.0",
+  "description": "Diff 2 Websites by URL",
+  "scripts": {
+    "start": "node main.js",
+    "clean": "rm -rf httplocalhost808* diff/",
+    "test": "jest",
+    "tsc-dev": "tsc -w",
+    "tsc-rel": "tsc --outDir ./dist --sourceMap false",
+    "scoc": "scoc './*.ts' |tr '\n' '\t' >> scoc.log && date >> scoc.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike-Neto/web_diff.git"
+  },
+  "keywords": [
+    "image"
+  ],
+  "author": "Miguel Mendes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mike-Neto/web_diff/issues"
+  },
+  "homepage": "https://github.com/Mike-Neto/web_diff#readme",
+  "dependencies": {
+    "puppeteer": "^1.11.0",
+    "sanitize-filename": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/puppeteer": "^1.10.1",
+    "@types/sanitize-filename": "^1.1.28",
+    "git-hooks": "^1.1.10",
+    "http-server": "^0.11.1",
+    "jest": "^23.6.0",
+    "scoc": "^2.1.0",
+    "typescript": "^3.2.2"
+  }
+}

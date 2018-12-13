@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# Tests
+http*/
+diff/
+
+# Editors
+.vscode/
+.idea/
+
+# TS dev info
+*.map
+*.js
+
+# Reinclude test js files
+!test.config.js
+!main.test.js
